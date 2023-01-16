@@ -2,7 +2,7 @@
 
 # What is pisql ?
 
-pisql is a mix of a command line tool and a small python library to interact with a [Sybase ASE][^1] database.  
+pisql is a mix of a command line tool and a small python library to interact with a [Sybase ASE][1] database.  
 It so happens, that I have to work with a Sybase ASE database and I wanted to have a tool to interact with it.  
 
 ## But why ?
@@ -11,15 +11,15 @@ The reason I built this is fairly simple although frustrating:
 
 * My company has tight control over what gets installed on the workstations
 * My company hasn't bought the SQL Anywhere drivers for ASE on top of ASE itself as of today
-* The only way I have to interact with the database is through a [very old and ugly piece of software called "sqlDbx"][^2].
+* The only way I have to interact with the database is through a [very old and ugly piece of software called "sqlDbx"][2].
 * I wanted to have scripting and automation capabilities that the interface couldn't provide, but that bash/powershell/python could.
 
 ## What is it ?
 
-pisql is, for the CLI part, a [rich CLI wrapper][^3] around the barebones [isql][^4] command line tool that comes with the ASE installation every time.
+pisql is, for the CLI part, a [rich CLI wrapper][3] around the barebones [isql][4] command line tool that comes with the ASE installation every time.
 
 For the python part, it's a small library that allows you to interact with the database through python code.
-You can turn `.sql` files into dataframes ([pandas](https://pandas.pydata.org/) or [polars](pola.rs)), and further manipulate them.
+You can turn `.sql` files into dataframes ([pandas](https://pandas.pydata.org/) or [polars](https://pola.rs)), and further manipulate them.
 You can use every tool you have in python to interact with the data, vizualize it, etc.
 
 ## How do I use it ?
@@ -95,7 +95,7 @@ I'm currently working on a few things:
 
 Here's most of it for now ! I'll update this as I go.
 
-[^1]: https://www.sap.com/products/technology-platform/sybase-ase.html
-[^2]: http://www.sqldbx.com/
-[^3]:https://github.com/Textualize/rich
-[^4]:https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35456.1570/html/ocspsunx/X33477.htm
+[1]: https://www.sap.com/products/technology-platform/sybase-ase.html
+[2]: http://www.sqldbx.com/
+[3]:https://github.com/Textualize/rich
+[4]:https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc35456.1570/html/ocspsunx/X33477.htm
